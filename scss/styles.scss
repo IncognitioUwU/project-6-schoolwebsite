@@ -1,0 +1,33 @@
+$darker-blue: #0e2496;
+$light: #fff;
+$light-hover: #bbb;
+$logo-padding: 6px;
+$carousel-width: 60%;
+
+nav{
+    background-color: $darker-blue;
+    #navbar-logo{
+        margin-left: 30%;
+        background-color: $light;
+        padding: $logo-padding $logo-padding*2;
+        border-radius: 15px;
+    }
+    .nav-link{
+        color: $light;
+        &:hover{
+            color:$light-hover;
+        }
+    }
+}
+
+body{
+    background-color: $light;
+}
+
+#homepagecarousel{
+    width: $carousel-width!important;
+    margin: 2% (100-$carousel-width)/2;
+    img{
+        border-radius:11px;
+    }
+}

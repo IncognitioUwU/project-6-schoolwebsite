@@ -1,0 +1,29 @@
+nav {
+  background-color: #0e2496;
+}
+nav #navbar-logo {
+  margin-left: 30%;
+  background-color: #fff;
+  padding: 6px 12px;
+  border-radius: 15px;
+}
+nav .nav-link {
+  color: #fff;
+}
+nav .nav-link:hover {
+  color: #bbb;
+}
+
+body {
+  background-color: #fff;
+}
+
+#homepagecarousel {
+  width: 60% !important;
+  margin: 2% 20%;
+}
+#homepagecarousel img {
+  border-radius: 11px;
+}
+
+/*# sourceMappingURL=styles.css.map */
