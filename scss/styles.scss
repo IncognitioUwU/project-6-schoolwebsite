@@ -1,8 +1,16 @@
 $darker-blue: #0e2496;
 $light: #fff;
 $light-hover: #bbb;
+$announcementbox: rgba(215, 89, 89, 0.914);
 $logo-padding: 6px;
 $carousel-width: 60%;
+
+.announcementbox{
+    background-color: $announcementbox;
+    padding: 8px;
+    border-radius: 2px;
+    border: 2px solid black;
+}
 
 nav{
     background-color: $darker-blue;

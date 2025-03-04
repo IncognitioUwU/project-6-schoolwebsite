@@ -1,3 +1,10 @@
+.announcementbox {
+  background-color: rgba(215, 89, 89, 0.914);
+  padding: 8px;
+  border-radius: 2px;
+  border: 2px solid black;
+}
+
 nav {
   background-color: #0e2496;
 }
