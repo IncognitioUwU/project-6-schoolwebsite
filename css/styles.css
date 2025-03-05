@@ -1,12 +1,27 @@
+.carousel-caption {
+  text-shadow: 3px 3px 5px #041b8e;
+}
+
 .announcementbox {
-  background-color: rgba(215, 89, 89, 0.914);
-  padding: 8px;
-  border-radius: 2px;
+  background-color: rgb(156, 197, 226);
+  padding: 12px;
+  border-radius: 5px;
   border: 2px solid black;
+  width: 50%;
+  min-width: 100px;
+  margin: 20px auto 40px;
+}
+@media screen and (min-width: 600px) {
+  .announcementbox {
+    width: 40%;
+  }
+}
+.announcementbox p {
+  margin: 8px 8%;
 }
 
 nav {
-  background-color: #0e2496;
+  background-color: #041b8e;
 }
 nav #navbar-logo {
   margin-left: 30%;
@@ -21,8 +36,16 @@ nav .nav-link:hover {
   color: #bbb;
 }
 
-body {
-  background-color: #fff;
+#textsection {
+  border-top: 2px solid #041b8e;
+  background-color: #95b9f2;
+  padding: 8px 5%;
+}
+#textsection h1 {
+  color: #041b8e;
+}
+#textsection h2 {
+  color: #041b8e;
 }
 
 #homepagecarousel {

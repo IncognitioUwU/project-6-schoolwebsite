@@ -1,15 +1,30 @@
-$darker-blue: #0e2496;
+$darker-blue: #041b8e;
+$lighter-blue: #95b9f2;
 $light: #fff;
 $light-hover: #bbb;
-$announcementbox: rgba(215, 89, 89, 0.914);
+$announcementbox: rgb(156, 197, 226);
 $logo-padding: 6px;
 $carousel-width: 60%;
 
-.announcementbox{
+.carousel-caption{
+    text-shadow: 3px 3px 5px $darker-blue;
+}
+
+.announcementbox {
     background-color: $announcementbox;
-    padding: 8px;
-    border-radius: 2px;
+    padding: 12px;
+    border-radius: 5px;
     border: 2px solid black;
+    width: 50%;  // Default: 50% for small screens
+    min-width: 100px;
+    margin: 20px auto 40px;
+    @media screen and (min-width: 600px) { 
+        width: 40%; // When screen is 480px or more, change to 40%
+    }
+
+    p {
+        margin: 8px 8%;
+    }
 }
 
 nav{
@@ -28,13 +43,21 @@ nav{
     }
 }
 
-body{
-    background-color: $light;
+#textsection{
+    border-top: 2px solid $darker-blue;
+    background-color: $lighter-blue;
+    padding: 8px 5%;
+    h1{
+        color:$darker-blue;
+    }
+    h2{
+        color:$darker-blue;
+    }
 }
 
 #homepagecarousel{
     width: $carousel-width!important;
-    margin: 2% (100-$carousel-width)/2;
+    margin: 2% calc((100% - $carousel-width) / 2);
     img{
         border-radius:11px;
     }

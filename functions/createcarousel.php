@@ -6,7 +6,7 @@
         $carouselinners = array();
 
         foreach ($images as $slide => $image) {
-            $caption = str_replace(' ', '_', ucfirst(basename($image, ".jpg")));
+            $caption = str_replace('_', ' ', ucwords(basename($image, ".jpg"),"_"));
             $active = ($slide == 0) ? 'active' : '';
 
             $carouselbuttons[] = addButton($slide, $active, $carouselname);
